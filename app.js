@@ -36,7 +36,7 @@ app.post('/', function (req, res) {
 
   function responseHandler(assistant) {
     let randomReason = getRandomReason();
-    assistant.tell(reason[randomReason]);
+    assistant.tell(reasons[randomReason]);
   }
 
   assistant.handleRequest(responseHandler);
@@ -48,7 +48,7 @@ app.get('/', function (req, res) {
   res.writeHead(200, {
     'Content-Type': 'text/html'
   });
-  res.write('<html><head><title>Reasons Why They Love Me</title></head><body><h1>RWTLM Demo</h1><div><p>Curious why "Person" loves you? Ask "Why does Person love me?"</p><iframe width="350" height="430" src="https://console.api.ai/api-client/demo/embedded/62da6a94-0ac9-4640-bd99-bc456c58064b"></iframe></div><script src="https://button.glitch.me/button.js" data-style="glitch"></script><div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div></body></html>');
+  res.write('<html><head><title>Reasons Why They Love Me</title></head><body><h1>RWTLM Demo</h1><div><p>Curious why "Person" loves you? Ask "Why does Person love me?"</p><iframe width="350" height="430" src="https://console.api.ai/api-client/demo/embedded/reasons-why-they-love-me"></iframe></div><script src="https://button.glitch.me/button.js" data-style="glitch"></script><div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div></body></html>');
   res.end();
 });
 
