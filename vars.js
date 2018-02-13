@@ -14,6 +14,8 @@ const reasons = [
   'Because 10',
 ]
 
+const projectID = 'reasons-why-they-love-me';
+
 module.exports = {
   person,
   reasons
