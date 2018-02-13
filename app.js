@@ -17,14 +17,12 @@ process.env.DEBUG = 'actions-on-google:*';
 let Assistant = require('actions-on-google').ApiAiAssistant;
 let express = require('express');
 let bodyParser = require('body-parser');
-let reasonsWhy = require('./reasons-why.js');
+let { reasons, person } = require('./vars.js');
 
 let app = express();
-app.use(bodyParser.json({
-  type: 'application/json'
-}));
+app.use(bodyParser.json({ type: 'application/json' }));
 
-// [START Action]
+// ACTION LOGIC
 app.post('/', function (req, res) {
   const assistant = new Assistant({
     request: req,
@@ -32,24 +30,25 @@ app.post('/', function (req, res) {
   });
   console.log('Request received: ' + JSON.stringify(req.body));
 
-  // Fulfill action logic
+  function getRandomReason() {
+    return Math.floor(Math.random() * reasons.length);
+  }
+
   function responseHandler(assistant) {
-    if (Math.random() >= 0.5)
-      assistant.tell('Daddy!');
-    else
-      assistant.tell('Chips!');
+    let randomReason = getRandomReason();
+    assistant.tell(randomReason);
   }
 
   assistant.handleRequest(responseHandler);
 });
-// [END Action]
+
 
 // Renders the homepage
 app.get('/', function (req, res) {
   res.writeHead(200, {
     'Content-Type': 'text/html'
   });
-  res.write('<html><head><title>Google Home Agent</title></head><body><h1>Google Home Agent Example</h1><div><p>Ah, the age-old question - which is better, Daddy or Chips? Google Home will tell you. Type or ask "daddy or chips?"</p><iframe width="350" height="430" src="https://console.api.ai/api-client/demo/embedded/62da6a94-0ac9-4640-bd99-bc456c58064b"></iframe></div><script src="https://button.glitch.me/button.js" data-style="glitch"></script><div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div></body></html>');
+  res.write('<html><head><title>Reasons Why They Love Me</title></head><body><h1>RWTLM Demo</h1><div><p>Curious why "Person" loves you? Ask "Why does Person love me?"</p><iframe width="350" height="430" src="https://console.api.ai/api-client/demo/embedded/62da6a94-0ac9-4640-bd99-bc456c58064b"></iframe></div><script src="https://button.glitch.me/button.js" data-style="glitch"></script><div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div></body></html>');
   res.end();
 });
 
