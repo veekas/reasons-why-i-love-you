@@ -36,7 +36,7 @@ app.post('/', function (req, res) {
 
   function responseHandler(assistant) {
     let randomReason = getRandomReason();
-    assistant.tell(person + 'loves you because' + reasons[randomReason]);
+    assistant.tell(person + ' loves you because ' + reasons[randomReason]);
   }
 
   assistant.handleRequest(responseHandler);
