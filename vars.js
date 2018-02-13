@@ -3,20 +3,18 @@
 const person = `Person's Name`;
 
 // The action response will be in the format of "[person] loves you because [reason]"
-// (Example reasons are from https://www.enkirelations.com/100-reasons-why-i-love-you.html)
 const reasons = [
-  `You have such a beautiful smile.`,
-  `You makes me feel peaceful and loved.`,
-  `We are independent, yet when we are together, we are inseparable.`,
-  `You make me feel special.`,
-  `You put up with my imperfections.`,
-  `You treat my family right.`
+  `you have such a beautiful smile.`,
+  `you make him feel peaceful and loved.`,
+  `we are independent, yet when we are together, we are inseparable.`,
+  `you make him feel special.`,
+  `you put up with his imperfections.`,
+  `you treat his family right.`
 ]
 
-// replace with your own project ID
 const projectID = 'reasons-why-they-love-me';
 
-// if you want to use the demo page, you may optionally change the following variables
+// if you want to modify the demo page on Glitch, you may optionally change the following variables
 
 const title = 'Reasons Why They Love Me';
 
