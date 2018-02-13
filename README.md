@@ -1,4 +1,6 @@
-# Daddy or Chips? Google Home Action
+# Reasons Why They Love Me
+
+<!-- # Daddy or Chips? Google Home Action
 
 Truly a question for the ages... since time immemorial people have wondered, which is better - Daddy or Chips?
 
@@ -14,4 +16,4 @@ To get started you need to:
 - Create a new project on Google Cloud
 - Then build out your app's logic in API.ai
 
-For more detailed setup instructions, see `setup.md`.
+For more detailed setup instructions, see `setup.md`. -->
