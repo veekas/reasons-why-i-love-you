@@ -1,4 +1,6 @@
-let reasons = [
+const person = 'Name';
+
+const reasons = [
   'Because 0',
   'Because 1',
   'Because 2',
@@ -8,5 +10,11 @@ let reasons = [
   'Because 6',
   'Because 7',
   'Because 8',
-  'Because 9'
+  'Because 9',
+  'Because 10',
 ]
+
+module.exports = {
+  person,
+  reasons
+};
