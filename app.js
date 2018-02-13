@@ -17,12 +17,12 @@ process.env.DEBUG = 'actions-on-google:*';
 let Assistant = require('actions-on-google').ApiAiAssistant;
 let express = require('express');
 let bodyParser = require('body-parser');
-let { reasons, person } = require('./vars.js');
+let { reasons, person, htmlOutput } = require('./vars.js');
 
 let app = express();
 app.use(bodyParser.json({ type: 'application/json' }));
 
-// ACTION LOGIC
+// action logic
 app.post('/', function (req, res) {
   const assistant = new Assistant({
     request: req,
@@ -36,30 +36,27 @@ app.post('/', function (req, res) {
 
   function responseHandler(assistant) {
     let randomReason = getRandomReason();
-    assistant.tell(reasons[randomReason]);
+    assistant.tell(person + 'loves you because' + reasons[randomReason]);
   }
 
   assistant.handleRequest(responseHandler);
 });
-
 
 // Renders the homepage
 app.get('/', function (req, res) {
   res.writeHead(200, {
     'Content-Type': 'text/html'
   });
-  res.write('<html><head><title>Reasons Why They Love Me</title></head><body><h1>RWTLM Demo</h1><div><p>Curious why "Person" loves you? Ask "Why does Person love me?"</p><iframe width="350" height="430" src="https://console.api.ai/api-client/demo/embedded/reasons-why-they-love-me"></iframe></div><script src="https://button.glitch.me/button.js" data-style="glitch"></script><div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div></body></html>');
+  res.write(htmlOutput);
   res.end();
 });
 
 if (module === require.main) {
-  // [START server]
   // Start the server
   let server = app.listen(process.env.PORT || 3000, function () {
     let port = server.address().port;
-    console.log('App listening on port %s', port);
+    console.log(`App listening on port ${port}. You may be able to see it live at http://localhost:${port}`);
   });
-  // [END server]
 }
 
 module.exports = app;
