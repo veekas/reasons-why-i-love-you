@@ -12,7 +12,7 @@ const reasons = [
   `you treat his family right.`
 ]
 
-const projectID = 'reasons-why-they-love-me';
+const projectID = '4720f5ba-1264-40ab-9cd4-2030c5a1f47a';
 
 // if you want to modify the demo page on Glitch, you may optionally change the following variables
 
@@ -29,7 +29,11 @@ const htmlOutput = `
     <h1>${title}</h1>
     <div>
       <p>${introParagraph}</p>
-      <iframe width="350" height="430" src="https://console.api.ai/api-client/demo/embedded/${projectID}"></iframe>
+      <iframe
+        width="350"
+        height="430"
+        src="https://console.dialogflow.com/api-client/demo/embedded/${projectID}">
+      </iframe>
     </div>
     <script src="https://button.glitch.me/button.js" data-style="glitch"></script>
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
