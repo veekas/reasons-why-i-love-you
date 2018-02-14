@@ -16,9 +16,7 @@ const projectID = 'reasons-why-they-love-me';
 
 // if you want to modify the demo page on Glitch, you may optionally change the following variables
 
-const title = 'Reasons Why They Love Me';
-
-const header = `Demo of 'Reasons Why They Love Me'`;
+const title = `Demo of 'Reasons Why They Love Me'`;
 
 const introParagraph = `Curious why ${person} loves you? Type or say "Why does ${person} love me?" in the box below.`;
 
@@ -28,7 +26,7 @@ const htmlOutput = `
     <title>${title}</title>
   </head>
   <body>
-    <h1>${header}</h1>
+    <h1>${title}</h1>
     <div>
       <p>${introParagraph}</p>
       <iframe width="350" height="430" src="https://console.api.ai/api-client/demo/embedded/${projectID}"></iframe>
@@ -36,9 +34,12 @@ const htmlOutput = `
     <script src="https://button.glitch.me/button.js" data-style="glitch"></script>
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <footer>
+      <center>
       <a href="https://github.com/veekas/reasons-why-they-love-me/blob/master/privacy-policy.md">Privacy Policy</a>
       <br />
-      Created with <3 by <a href="http://veekasmeansprogress.com">Veekas Shrivastava</a> and <a href="https://glitch.com/~google-home">Glitch</a></footer>
+      Created with <3 by <a href="http://veekasmeansprogress.com">Veekas Shrivastava</a> and <a href="https://glitch.com/~google-home">Glitch</a>
+      </center>
+    </footer>
   </body>
 </html>
 `;
