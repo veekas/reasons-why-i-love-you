@@ -38,3 +38,4 @@ A small action for Google Home that tells you a few reasons why Mister Rogers lo
 - [Glitch](https://glitch.com/) for providing the [starter code](https://glitch.com/~google-home) and hosting
 - Erin, for loving and supporting me. Happy Valentines' Day. =)
 - Google, for giving me a new, nerdy way to tell Erin that I love her. [Their docs have more explanations, examples, and tutorials](https://developers.google.com/actions/extending-the-assistant)
+- [Google Developer Group NYC](https://www.meetup.com/gdgnyc) for inspiring me to tinker with Google Actions
