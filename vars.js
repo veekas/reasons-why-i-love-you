@@ -16,7 +16,7 @@ const projectID = 'ae2c662f-197d-4272-9dcb-550cc97cb766';
 
 // if you want to modify the demo page on Glitch, you may optionally change the following variables
 
-const title = `Why Mister Rogers Loves You`;
+const title = `Reasons Why Mister Rogers Loves You`;
 
 const introParagraph = `Would you like to know why ${person} loves you? Type or say "Why does ${person} love me?" in the box below.`;
 
@@ -27,16 +27,18 @@ const htmlOutput = `
   </head>
   <body style="background-color:#2b313f; text-align:center; font-family: Poppins;">
     <h1 style="color:#fd9727;">${title}</h1>
-    <p style="max-width: 100%; color: white;">${introParagraph}</p><br/>
-    <iframe height=25% src="https://www.youtube.com/embed/9_YHy5yhoyU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <p style="max-width: 100%; color: white;">"I think everybody longs to be loved, and longs to know that he or she is lovable. And, consequently, the greatest thing that we can do is to help somebody know that they're loved and capable of loving."<br />-Mister Rogers<br /></p>
+    <iframe src="https://www.youtube.com/embed/9_YHy5yhoyU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <br /><br />
+    <p style="max-width: 100%; color: white;">${introParagraph}</p><br/>
     <iframe
       width=100%
       height="430"
       src="https://console.dialogflow.com/api-client/demo/embedded/${projectID}">
     </iframe>
+    <p style="max-width: 100%; color: white;">Want to hear more? Ask "Why else does ${person} love me?"</p>
     <script src="https://button.glitch.me/button.js" data-style="glitch"></script>
-    <div class="glitchButton" style="position:fixed;top:20px;left:20px;"></div>
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <footer style="color:white">
         Made for Valentines' Day 2018
         by <a href="http://veekasmeansprogress.com" style="color:#A5D175">Veekas Shrivastava</a>
