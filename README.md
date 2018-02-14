@@ -21,7 +21,10 @@ A small action for Google Home that tells you a few reasons why Mister Rogers lo
 8. Click "Intents" in the left sidebar, and modify the "User says" inputs for "Give a Reason" and "Give a Reason - more" (accessible via the arrow next to "Give a Reason") to include messages you want the user to be able to say to hear a reason.
 9. Click "Integrations" and make sure "Web Demo" is active. A popup box will show you a link. Copy the long string of characters **after** `https://bot.dialogflow.com/`, and replace the `projectID` variable in [vars.js](vars.js) with it. It should follow a similar format to the existing id.
 10. Click "Fulfillment" in the left sidebar and update the url to include the link to your Remixed project created in step 4. That's the url in the tab that opens when you click 'Show' from your Glitch project page. It will have the format `https://project-name.glitch.me`.
-11. **At this point your agent should be working. Let's test!**
+
+### Your agent should now be working!
+
+11. Let's test!
   - Type an example command in the right sidebar of Dialogflow to see if you get the responses you expect.
   - You can also check if it works from the "Integrations" page by clicking on "Google Assistant" and then clicking "TEST" at the bottom of the popup.
   - This is also a good time to check your project's 'Show' page to see if the embedded action works. Note that the rest of the page will still be Mister Rogers-related unless you change the `htmlOutput` variable in [vars.js](vars.js).
