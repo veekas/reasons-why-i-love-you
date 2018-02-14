@@ -39,7 +39,7 @@ const htmlOutput = `
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <footer>
       <center>
-      <a href="https://github.com/veekas/reasons-why-they-love-me/blob/master/privacy-policy.md">Privacy Policy</a>
+      <a href="http://veekasmeansprogress.com/reasons-why-they-love-me/privacy-policy.pdf">Privacy Policy</a>
       <br />
       Created with <3 by <a href="http://veekasmeansprogress.com">Veekas Shrivastava</a> and <a href="https://glitch.com/~google-home">Glitch</a>
       </center>
