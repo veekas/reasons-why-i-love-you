@@ -1,48 +1,45 @@
 // The variables in this file are the ones you'll want to modify in order to customize your action:
 
-const person = `Person's Name`;
+const person = `Mister Rogers`;
 
 // The action response will be in the format of "[person] loves you because [reason]"
 const reasons = [
-  `you have such a beautiful smile.`,
-  `you make him feel peaceful and loved.`,
-  `we are independent, yet when we are together, we are inseparable.`,
-  `you make him feel special.`,
-  `you put up with his imperfections.`,
-  `you treat his family right.`
+  `you always see the good in every situation`,
+  `you are a great listener`,
+  `you are a good friend`,
+  `you have an infectious laugh`,
+  `you treat others with respect`,
+  `you are you, and he likes you as you are!`,
 ]
 
-const projectID = '4720f5ba-1264-40ab-9cd4-2030c5a1f47a';
+const projectID = 'ae2c662f-197d-4272-9dcb-550cc97cb766';
 
 // if you want to modify the demo page on Glitch, you may optionally change the following variables
 
 const title = `Demo of 'Reasons Why They Love Me'`;
 
-const introParagraph = `Curious why ${person} loves you? Type or say "Why does ${person} love me?" in the box below.`;
+const introParagraph = `Would you like to know why ${person} loves you? Type or say "Why does ${person} love me?" in the box below.`;
 
 const htmlOutput = `
 <html>
   <head>
     <title>${title}</title>
   </head>
-  <body>
-    <h1>${title}</h1>
-    <div>
-      <p>${introParagraph}</p>
-      <iframe
-        width="350"
-        height="430"
-        src="https://console.dialogflow.com/api-client/demo/embedded/${projectID}">
-      </iframe>
-    </div>
+  <body style="background-color:#2b313f; text-align:center; font-family: Poppins;">
+    <h1 style="color:#fd9727;">${title}</h1>
+    <p style="max-width: 100%; color: white;">${introParagraph}</p><br/>
+    <iframe
+      width=100%
+      height="430"
+      src="https://console.dialogflow.com/api-client/demo/embedded/${projectID}">
+    </iframe>
     <script src="https://button.glitch.me/button.js" data-style="glitch"></script>
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <footer>
-      <center>
-      <a href="http://veekasmeansprogress.com/reasons-why-they-love-me/privacy-policy.pdf">Privacy Policy</a>
-      <br />
-      Created with <3 by <a href="http://veekasmeansprogress.com">Veekas Shrivastava</a> and <a href="https://glitch.com/~google-home">Glitch</a>
-      </center>
+    <div class="glitchButton" style="position:fixed;top:20px;left:20px;"></div>
+    <footer style="color:white">
+        Made for Valentines' Day 2018
+        by <a href="http://veekasmeansprogress.com">Veekas Shrivastava</a>
+        with help from <a href="https://glitch.com/~google-home">Glitch</a>.
+        Google made me create a <a href="http://veekasmeansprogress.com/reasons-why-they-love-me/privacy-policy.pdf">privacy policy</a>.
     </footer>
   </body>
 </html>
