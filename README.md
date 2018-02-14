@@ -4,7 +4,7 @@ A small action for Google Home that tells you a few reasons why Mister Rogers lo
 
 [View the demo here.](https://reasons-why-i-love-you.glitch.me)
 
-![Mister Rogers reasons screenshot](https://raw.githubusercontent.com/veekas/reasons-why-they-love-me/master/assets/mister-rogers-screenshot.png)
+![Mister Rogers reasons screenshot](https://raw.githubusercontent.com/veekas/reasons-why-i-love-you/master/assets/mister-rogers-screenshot.jpeg?token=ADvHnmWPEU-874UcblVRTKmjcoiiYaTsks5ajaB_wA%3D%3D)
 
 ## How to customize this for someone special
 
@@ -13,14 +13,14 @@ A small action for Google Home that tells you a few reasons why Mister Rogers lo
  2. Create a [Google Cloud project](https://console.cloud.google.com/project) to host your action. Remember the name you gave it.
  3. Sign up for a [Dialogflow account](https://dialogflow.com) to control the action logic
 
-### Steps to Setup your Google Home Action
+### Steps to set up your Google Home Action
 4. ['Remix' this app](https://glitch.com/edit/#!/remix/reasons-why-i-love-you) on Glitch. (i.e. copy it to your account so you can edit it), and open the [vars.js](vars.js) file. Change the variable `person` to be your name. Change the `reasons` to include your own reasons, as many as you'd like! Pay attention to the syntax and grammar here.
 5. Create a new 'agent' in [Dialogflow](https://console.dialogflow.com/api-client/#/newAgent), making sure to select the Google Cloud project you created earlier.
 6. Click on the gear icon next to the agent name to access settings. Click "Export and Import" and import the following zip file: [assets/reasons-why-he-loves-you.zip](assets/reasons-why-he-loves-you.zip).
 7. Edit the name, description, etc. in "General" settings.
 8. Click "Intents" in the left sidebar, and modify the "User says" inputs for "Give a Reason" and "Give a Reason - more" (accessible via the arrow next to "Give a Reason") to include messages you want the user to be able to say to hear a reason.
 9. Click "Integrations" and make sure "Web Demo" is active. A popup box will show you a link. Copy the long string of characters **after** `https://bot.dialogflow.com/`, and replace the `projectID` variable in [vars.js](vars.js) with it. It should follow a similar format to the existing id.
-10. Click "Fulfillment" in the left sidebar and update the url to include the link to your Remixed project created in step 4. That's the url in the tab that opens when you click 'Show' from your GLitch project page. It will have the format `https://project-name.glitch.me`.
+10. Click "Fulfillment" in the left sidebar and update the url to include the link to your Remixed project created in step 4. That's the url in the tab that opens when you click 'Show' from your Glitch project page. It will have the format `https://project-name.glitch.me`.
 11. **At this point your agent should be working. Let's test!**
   - Type an example command in the right sidebar of Dialogflow to see if you get the responses you expect.
   - You can also check if it works from the "Integrations" page by clicking on "Google Assistant" and then clicking "TEST" at the bottom of the popup.
