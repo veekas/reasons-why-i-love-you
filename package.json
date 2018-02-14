@@ -1,8 +1,8 @@
 {
-  "name": "reasons-why-they-love-me",
+  "name": "reasons-why-i-love-you",
   "description": "Use this app to hear a random reason why someone loves you",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "license": "Apache Version 2.0",
   "author": "Veekas Shrivastava",
   "engines": {
