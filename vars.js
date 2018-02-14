@@ -16,7 +16,7 @@ const projectID = 'ae2c662f-197d-4272-9dcb-550cc97cb766';
 
 // if you want to modify the demo page on Glitch, you may optionally change the following variables
 
-const title = `Demo of 'Reasons Why They Love Me'`;
+const title = `Why Mister Rogers Loves You`;
 
 const introParagraph = `Would you like to know why ${person} loves you? Type or say "Why does ${person} love me?" in the box below.`;
 
@@ -37,9 +37,9 @@ const htmlOutput = `
     <div class="glitchButton" style="position:fixed;top:20px;left:20px;"></div>
     <footer style="color:white">
         Made for Valentines' Day 2018
-        by <a href="http://veekasmeansprogress.com">Veekas Shrivastava</a>
-        with help from <a href="https://glitch.com/~google-home">Glitch</a>.
-        Google made me create a <a href="http://veekasmeansprogress.com/reasons-why-they-love-me/privacy-policy.pdf">privacy policy</a>.
+        by <a href="http://veekasmeansprogress.com" style="color:#A5D175">Veekas Shrivastava</a>
+        with help from <a href="https://glitch.com/~google-home" style="color:#A5D175">Glitch</a>.
+        Google made me create a <a href="http://veekasmeansprogress.com/reasons-why-they-love-me/privacy-policy.pdf" style="color:#A5D175">privacy policy</a>.
     </footer>
   </body>
 </html>
