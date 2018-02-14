@@ -14,7 +14,7 @@ const reasons = [
 
 const projectID = 'ae2c662f-197d-4272-9dcb-550cc97cb766';
 
-// if you want to modify the demo page on Glitch, you may optionally change the following variables
+// if you want to modify the look-and-feel of the demo page on Glitch, change the following variables
 
 const title = `Reasons Why Mister Rogers Loves You`;
 
