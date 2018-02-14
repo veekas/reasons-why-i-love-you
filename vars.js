@@ -39,7 +39,6 @@ const htmlOutput = `
         Made for Valentines' Day 2018
         by <a href="http://veekasmeansprogress.com" style="color:#A5D175">Veekas Shrivastava</a>
         with help from <a href="https://glitch.com/~google-home" style="color:#A5D175">Glitch</a>.
-        Google made me create a <a href="http://veekasmeansprogress.com/reasons-why-they-love-me/privacy-policy.pdf" style="color:#A5D175">privacy policy</a>.
     </footer>
   </body>
 </html>
