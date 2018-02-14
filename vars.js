@@ -35,9 +35,13 @@ const htmlOutput = `
     </div>
     <script src="https://button.glitch.me/button.js" data-style="glitch"></script>
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <footer>
+      <a href="https://github.com/veekas/reasons-why-they-love-me/blob/master/privacy-policy.md">Privacy Policy</a>
+      <br />
+      Created with <3 by <a href="http://veekasmeansprogress.com">Veekas Shrivastava</a> and <a href="https://glitch.com/~google-home">Glitch</a></footer>
   </body>
 </html>
-`
+`;
 
 // export variables needed in `app.js`
 
