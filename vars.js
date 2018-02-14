@@ -43,6 +43,7 @@ const htmlOutput = `
         Made for Valentines' Day 2018
         by <a href="http://veekasmeansprogress.com" style="color:#A5D175">Veekas Shrivastava</a>
         with help from <a href="https://glitch.com/~google-home" style="color:#A5D175">Glitch</a>.
+        <a href="https://github.com/veekas/reasons-why-i-love-you" style="color:#A5D175">View on Github.</a>
     </footer>
   </body>
 </html>
