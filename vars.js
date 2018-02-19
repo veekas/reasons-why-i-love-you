@@ -9,7 +9,27 @@ const reasons = [
   `you are a good friend`,
   `you have an infectious laugh`,
   `you treat others with respect`,
-  `you are you, and he likes you as you are!`,
+  `you are you, and he loves you as you are!`,
+  `you are wonderful`,
+  `you are the most perfect you there is`,
+  `you are strong`,
+  `you have a unique and refreshing perspective`,
+  `you light up every room you are in`,
+  `you are helpful`,
+  `you have a great sense of humor`,
+  `you are courageous`,
+  `you have integrity`,
+  `you stick by your convictions`,
+  `you are a ray of sunshine on a rainy day`,
+  `you are working to make a difference`,
+  `you bring out the best in others`,
+  `you bring joy to the world`,
+  `you are kind to those around you`,
+  `you have great ideas`,
+  `you are always learning and growing`,
+  `you are thoughtful and considerate`,
+  `you are someone's reason to smile`,
+  `you are special`
 ]
 
 const projectID = 'ae2c662f-197d-4272-9dcb-550cc97cb766';
