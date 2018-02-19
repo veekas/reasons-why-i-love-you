@@ -28,9 +28,9 @@ A small action for Google Home that tells you a few reasons why Mister Rogers lo
   - You can also check if it works from the "Integrations" page by clicking on "Google Assistant" and then clicking "Test" at the bottom of the popup.
   - This is also a good time to check your project's 'Show' page to see if the embedded action works. Note that the rest of the page will still be Mister Rogers-themed unless you change the `htmlOutput` variable in [vars.js](vars.js).
   - Finally, preview the action using the Google Home [web simulator](https://developers.google.com/actions/tools/web-simulator). Access it from the left sidebar of your [Actions on Google](https://console.actions.google.com) project page.
-12. If all of that worked, you have a working action! Now, you have two options:
+12. If all of that worked, you have a working action! Now, you have three options:
   - Modify and share your Glitch project demo page and use that as your online reason-giver
-  - Submit your project for review to be published. You'll find some files in the [assets](assets/) and [docs](docs/) folders that may help with required fields.
+  - Submit your project for review to be published. You'll find some files in the [assets](assets/) and [docs](docs/) folders that may help with required fields. Regarding the required privacy policy, the strategy that worked for me (learned the hard way) is to personalize and copy/paste the text in [privacy-policy.pdf](docs/privacy-policy.pdf) into the Google Doc given in Google's instructions.
   - Set up "infinite testing" so you can use your action privately and indefinitely! [This is a bit of a process, though...](https://medium.com/google-cloud/how-to-create-a-custom-private-google-home-action-260e2c512fc)
 
 ## Acknowledgments
