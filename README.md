@@ -2,7 +2,7 @@
 
 A small action for Google Home that tells you a few reasons why Mister Rogers loves you. Edit and deploy it yourself to make a custom action that tells someone special why you love them!
 
-[View the demo here.](https://reasons-why-i-love-you.glitch.me)
+[View the demo here.](https://reasons-why-i-love-you.glitch.me) (2019 note: my access tokens expired so the tool doesn't currently work, but the code should still be functional)
 
 ![Mister Rogers reasons screenshot](https://raw.githubusercontent.com/veekas/reasons-why-i-love-you/master/assets/mister-rogers-screenshot.jpeg?token=ADvHnmWPEU-874UcblVRTKmjcoiiYaTsks5ajaB_wA%3D%3D)
 
